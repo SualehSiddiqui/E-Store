@@ -17,13 +17,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #afaeae;
+    background: #097e57bf;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #868585;
+    background: #02583cbf;
 }
 
 .dot-spinner {
@@ -216,13 +216,14 @@
 .main-div {
     background-color: #eec160bf;
     width: 100%;
-    height: 85.5vh;
+    height: 100vh;
     /* padding: 10px; */
 }
 
 .container {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filter-div {
@@ -296,7 +297,7 @@
     color: white !important;
 }
 
-.all-cards{
+.all-cards {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -304,7 +305,7 @@
     padding: 20px;
 }
 
-.cards{
+.cards {
     width: 250px;
     /* height: 300px; */
     height: auto;
@@ -313,55 +314,80 @@
     box-shadow: #097e57bf 0px 2px 4px 0px, #097e57bf 0px 0px 0px 2px;
 }
 
-.item-img-div{
+.item-img-div {
     height: 150px;
     width: 100%;
     position: relative;
 }
 
-.item-img{
+.item-img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.item-data{
+.item-data {
     padding: 10px 10px 0px 10px;
     font-size: 18px;
 }
 
-.item-price{
+.item-price {
     font-weight: bold;
 }
 
-.item-designer{
+.item-designer {
     font-size: 16px;
 }
 
-.item-price-fake{
+.item-price-fake {
     text-decoration: line-through;
 }
 
-.off-percent{
+.off-percent {
     color: red;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-.time{
-    font-size: 14px !important;
-    text-align: end;
-}
-
-.rating-star{
-    position: absolute;
-    bottom: 3px;
-    left: 0;
+.rating-star {
     color: orange;
 }
 
-/* .item-title{
-    font
-    font-weight: bold;
-} */
+.rating-star-div {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+.filter-div-2{
+    width: 100%;
+    background-color: #fff;
+    min-height: 132px;
+    border-radius: 10px;
+    box-shadow: #097e57bf 0px 2px 4px 0px, #097e57bf 0px 0px 0px 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: hidden;
+    position: relative;
+    display: none;
+}
+
+.gallery-img{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .all-divs {
+        width: 100% !important;
+        height: 85%;
+    }
+
+    .filter-div{
+        display: none;
+    }
+    .filter-div-2{
+        display: flex;
+    }
+}
