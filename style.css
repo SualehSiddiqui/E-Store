@@ -307,15 +307,17 @@
 
 .cards {
     width: 250px;
-    /* height: 300px; */
     height: auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: #097e57bf 0px 2px 4px 0px, #097e57bf 0px 0px 0px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item-img-div {
-    height: 150px;
+    height: 200px;
     width: 100%;
     position: relative;
 }
@@ -359,7 +361,7 @@
     left: 0;
 }
 
-.filter-div-2{
+.filter-div-2 {
     width: 100%;
     background-color: #fff;
     min-height: 132px;
@@ -373,7 +375,7 @@
     display: none;
 }
 
-.gallery-img{
+.gallery-img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -384,10 +386,11 @@
         height: 85%;
     }
 
-    .filter-div{
+    .filter-div {
         display: none;
     }
-    .filter-div-2{
+
+    .filter-div-2 {
         display: flex;
     }
 }
